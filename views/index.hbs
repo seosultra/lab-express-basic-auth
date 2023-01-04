@@ -1,1 +1,13 @@
-<h1>Hello World</h1>
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+{{#if user}}
+  <h1>Hello {{user.username}}</h1>
+
+{{else}}
+  <h1>Hello visitor</h1>
+{{/if}}
+
+<a href="/main">Go to main content</a>
+
+<a href="/private">Go to private content</a>
